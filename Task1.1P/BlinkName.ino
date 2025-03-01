@@ -37,8 +37,7 @@ void setup() {
 void morse() {
     for(int i = 0; i < 5; i++) {
         for(int j = 0; j < 4; j++) {
-          if(digitalRead(buttonPin) == HIGH) restart = true;
-          if(restart) return;
+          
           int symbol = Name[i][j];
 
           if(symbol == Dash) {
@@ -52,17 +51,7 @@ void morse() {
     }          
 }
 
-void check() {
-  
-  if(digitalRead(buttonPin) == HIGH) {
-    
-    restart = false;
-    morse();
-  }
-
-  
-}
-
 void loop() {
-  check();
+  morse();
+  delay(7000);
 }
