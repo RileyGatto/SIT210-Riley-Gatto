@@ -27,7 +27,6 @@ void display(const int &Time) {
 
 void setup() {
   pinMode(LED_BUILTIN, OUTPUT);
-  pinMode(buttonPin, INPUT);
 }
 
 void morse() {
