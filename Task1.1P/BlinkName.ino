@@ -5,13 +5,10 @@
    Y = - o - -
 */
 
-
 const int Dot = 500;
 const int Dash = 1500;
 const int Wait = 500;
 const int Next = 1500;
-#define buttonPin  2
-
 
 int Name[][4] = {
   {Dot,Dash,Dot,0},
